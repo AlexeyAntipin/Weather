@@ -2,16 +2,14 @@ package com.company.weather.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.sql.Time
-import java.util.*
 
 @Entity(tableName = "weather_table")
 data class Weather(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val city: String,
-    val date: Date,
-    val time: Time,
+    val date: String,
+    val time: String,
     val temp: Int,
     val humidity: Int,
     val feelsLike: Int,

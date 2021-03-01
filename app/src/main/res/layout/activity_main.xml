@@ -56,6 +56,18 @@
                     app:layout_constraintStart_toStartOf="parent"
                     tools:text="Четверг"/>
 
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@id/time"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="20"/>
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/time"
                     android:layout_width="match_parent"
